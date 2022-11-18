@@ -10,8 +10,8 @@ pub struct DiffConfig {
     #[serde(flatten)]
     pub profile: HashMap<String, DiffProfile>,
 }
-#[derive(Debug, Serialize, Deserialize, Clone)]
 
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct DiffProfile {
     pub req1: RequestProfile,
     pub req2: RequestProfile,
